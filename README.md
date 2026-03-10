@@ -1,4 +1,4 @@
-# Landing CMS
+# МиграПро CMS
 
 Лендинг с резиновой (fluid) версткой. HTML/CSS/JS, сборщик Vite. Контент редактируется через Decap CMS (бывший Netlify CMS).
 
