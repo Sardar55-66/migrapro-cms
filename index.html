@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="МИГРАПРО — миграционные услуги в Москве и Московской области." />
+    <title>МИГРАПРО — Российское миграционное агентство</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <!-- Mobile header (unified, never changes) -->
+      <div class="header__mobile-header">
+        <a class="header__mobile-logo" href="/"><img src="/img/logo/mig-logo.png" alt="МИГРАПРО" width="120" height="38" /></a>
+        <div class="header__mobile-call-wrap">
+          <a class="header__mobile-call" href="tel:+74951543385" aria-label="Позвонить"><img src="/img/icons/phone-rounded.png" alt="" width="32" height="32" /></a>
+          <div class="header__burger-slot">
+            <button type="button" class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header-menu" data-burger>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop only: top bar -->
+      <div class="header__top">
+        <div class="header__container">
+          <div class="header__top-inner">
+            <div class="header__brand-block">
+              <a class="header__logo-desktop" href="/" aria-label="МИГРАПРО — на главную">
+                <img src="/img/logo/mig-logo.png" alt="МИГРАПРО" width="160" height="50" />
+              </a>
+              <div class="header__rating">
+                <div class="header__stars" aria-hidden="true">★★★★★</div>
+                <span class="header__rating-text">Наш рейтинг на основе Яндекс:</span>
+              </div>
+            </div>
+            <div class="header__divider" aria-hidden="true"></div>
+            <div class="header__contacts">
+             <div class="header__social-wrap">
+              <a class="header__social" href="#" aria-label="WhatsApp"><img src="/img/icons/whatsapp.png" alt="" width="24" height="24" /></a>
+              <a class="header__social" href="#" aria-label="Telegram"><img src="/img/icons/telegram.png" alt="" width="24" height="24" /></a>
+             </div>
+              <a class="header__phone" href="tel:+74951543385">
+                <img src="/img/icons/phone.png" alt="" width="18" height="18" />
+                +7 (495) 154-33-85
+              </a>
+              <span class="header__hours">пн-пт: 09:00-18:00</span>
+            </div>
+            <div class="header__divider" aria-hidden="true"></div>
+            <a class="header__cta" href="#consultation">Бесплатная консультация</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop only: nav -->
+      <div class="header__nav-wrap">
+        <div class="header__container">
+          <nav class="header__nav" aria-label="Основное меню">
+            <ul class="header__nav-list">
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">Услуги <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">РВП <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">ВНЖ <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">Гражданство <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">Разрешение на работу/виза в рф <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><button type="button" class="header__nav-link" aria-haspopup="true">Отмена депортации <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button></li>
+              <li><a class="header__nav-link" href="#info">Информация <span class="header__chevron" aria-hidden="true"><svg width="8" height="5" viewBox="0 0 8 5" fill="none"><path d="M1 1L4 4L7 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Mobile menu overlay (body only, header stays fixed above) -->
+      <div class="header__mobile-menu" id="header-menu" aria-hidden="true" data-mobile-menu>
+        <div class="header__mobile-body">
+          <div class="header__mobile-cta-wrap">
+            <a class="header__mobile-cta" href="#consultation">Бесплатная консультация</a>
+          </div>
+          <ul class="header__mobile-nav">
+            <li><button type="button" class="header__mobile-nav-link" data-accordion>Услуги <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></button></li>
+            <li class="header__mobile-nav-item--expandable">
+              <button type="button" class="header__mobile-nav-link header__mobile-nav-link--active" data-accordion>РВП <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></button>
+              <ul class="header__mobile-subnav">
+                <li><a href="#">Отказ в выдаче РВП</a></li>
+                <li><a href="#">Уведомление по РВП для иностранных граждан</a></li>
+                <li><a href="#">Что будет: если не подтверждать РВП</a></li>
+                <li><a href="#">Проверка готовности РВП</a></li>
+                <li><a href="#">Квота на РВП</a></li>
+                <li><a href="#">РВП по браку</a></li>
+              </ul>
+            </li>
+            <li><button type="button" class="header__mobile-nav-link" data-accordion>ВНЖ <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></button></li>
+            <li><button type="button" class="header__mobile-nav-link" data-accordion>Гражданство <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></button></li>
+            <li><button type="button" class="header__mobile-nav-link" data-accordion>Разрешение на работу/виза в рф <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></button></li>
+            <li><a class="header__mobile-nav-link" href="#">Отмена депортации <span class="header__chevron header__chevron--down"><svg width="13" height="6" viewBox="0 0 13 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1L6.5 5L12 1"/></svg></span></a></li>
+          </ul>
+          <div class="header__mobile-social-wrap">
+            <div class="header__mobile-social">
+              <a href="#" aria-label="WhatsApp"><img src="/img/icons/whatsapp.png" alt="" width="32" height="32" /></a>
+              <a href="#" aria-label="Telegram"><img src="/img/icons/telegram.png" alt="" width="32" height="32" /></a>
+            </div>
+          </div>
+          <div class="header__mobile-contacts">
+            <p class="header__mobile-hours">пн-пт: 09:00-18:00</p>
+            <a class="header__mobile-phone" href="tel:+79998889988"><img src="/img/icons/phone.png" alt="" width="16" height="16" /> +7 (999) 888-99-88</a>
+            <p class="header__mobile-address">Московская Область, Одинцовский р-н, п. Новоивановское, ул. Калинина 8</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="app">
+      <section id="block-hero" class="hero" aria-labelledby="hero-title">
+        <!-- Desktop/Tablet -->
+        <div class="hero__desktop">
+          <img
+            src="/img/img/people-pic.png"
+            alt="Команда специалистов"
+            class="hero__img"
+          />
+          <div class="hero__heading">
+            <h1 class="hero__title" id="hero-title">
+              <span class="hero__accent">Миграционные услуги</span><br>
+              <span class="hero__title-subtitle">в Москве и Московской области</span>
+            </h1>
+          </div>
+          <div class="hero__text-block">
+            <p class="hero__desc">
+              Помогаем <span class="hero__accent">иностранным гражданам</span> в оформлении квоты
+              на РВП, РВПО, РВП, ВНЖ, гражданства РФ,
+            </p>
+            <p class="hero__subdesc">
+              а также <span class="hero__accent">организациям, привлекающим иностранных сотрудников</span>
+              в России при оформлении виз для сотрудников по квоте и без квот
+            </p>
+          </div>
+          <div class="hero__cta-wrap">
+            <a href="#consultation" class="hero__cta">Задать вопрос</a>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="hero__mobile">
+          <h1 class="hero__mobile-title">
+            <span class="hero__accent">Миграционные услуги</span>
+            <span class="hero__mobile-title-rest">в Москве и Московской области</span>
+          </h1>
+          <div class="hero__media-wrap">
+            <img
+              src="/img/img/people-pic-mobile.svg"
+              alt="Команда специалистов"
+              class="hero__mobile-img"
+            />
+            <a href="#consultation" class="hero__cta hero__cta--mobile">Задать вопрос</a>
+          </div>
+          <p class="hero__mobile-desc">
+            Помогаем <span class="hero__accent">иностранным гражданам</span> в оформлении квоты
+            на РВП, РВПО, РВП, гражданства РФ,
+          </p>
+          <p class="hero__mobile-subdesc">
+            а также <span class="hero__accent">организациям, привлекающим иностранных сотрудников</span>
+            в России при оформлении виз для сотрудников по квоте и без квот
+          </p>
+        </div>
+      </section>
+
+      <section id="block-features" class="features" aria-label="Преимущества">
+        <div class="features__inner">
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <img src="/img/icons/college.png" alt="" width="56" height="56" />
+            </div>
+            <p class="features__text">Опытные специалисты</p>
+          </article>
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <img src="/img/icons/scale.png" alt="" width="56" height="56" />
+            </div>
+            <p class="features__text">Комплексная юридическая поддержка</p>
+          </article>
+          <article class="features__item">
+            <div class="features__icon" aria-hidden="true">
+              <img src="/img/icons/tower.png" alt="" width="56" height="56" />
+            </div>
+            <p class="features__text">Гарантия правильности оформления</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="block-services-cards" class="services-cards" aria-labelledby="services-cards-heading">
+        <div class="services-cards__inner">
+          <article class="services-cards__card">
+            <h2 class="services-cards__title" id="services-cards-heading">Организациям</h2>
+            <p class="services-cards__desc">
+              Полный спектр правовой поддержки для компаний, нанимающих иностранных специалистов в России, включая оформление виз для высококвалифицированных специалистов (ВКС) и сотрудников по квоте и без квот
+            </p>
+            <a class="services-cards__btn" href="#consultation">Узнать подробнее</a>
+          </article>
+          <article class="services-cards__card">
+            <h2 class="services-cards__title">Иностранным гражданам</h2>
+            <p class="services-cards__desc">
+              Консультация и помощь иностранным гражданам в процессе получения РВП (разрешения на временное проживание), ВНЖ (вид на жительство) и приобретения Российского гражданства
+            </p>
+            <a class="services-cards__btn" href="#consultation">Узнать подробнее</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

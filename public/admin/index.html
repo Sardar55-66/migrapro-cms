@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Админка — МИГРАПРО</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3/dist/decap-cms.js"></script>
+  <script>
+    (function() {
+      var siteUrl = window.location.origin + '/';
+      var createClass = window.CMS?.createClass || window.createClass;
+      var h = window.h || (window.CMS && window.CMS.h);
+      if (createClass && h) {
+        var IframePreview = createClass({
+          render: function() {
+            return h('iframe', { src: siteUrl, style: { width: '100%', height: '100%', border: 'none' } });
+          }
+        });
+        window.CMS.registerPreviewTemplate('home', IframePreview);
+      }
+    })();
+  </script>
+</body>
+</html>

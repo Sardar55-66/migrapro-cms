@@ -1,0 +1,49 @@
+@import './header.css';
+@import './hero.css';
+@import './features.css';
+@import './services-cards.css';
+
+/* Fluid / responsive layout base */
+:root {
+  /* Fluid typography (clamp: min, preferred, max) */
+  --font-size-xs: clamp(0.75rem, 2vw, 0.875rem);
+  --font-size-sm: clamp(0.875rem, 2.5vw, 1rem);
+  --font-size-base: clamp(1rem, 3vw, 1.125rem);
+  --font-size-lg: clamp(1.125rem, 4vw, 1.5rem);
+  --font-size-xl: clamp(1.5rem, 5vw, 2rem);
+  --font-size-2xl: clamp(2rem, 6vw, 3rem);
+  --font-size-3xl: clamp(2.5rem, 8vw, 4rem);
+
+  /* Fluid spacing */
+  --space-xs: clamp(0.25rem, 1vw, 0.5rem);
+  --space-sm: clamp(0.5rem, 2vw, 1rem);
+  --space-md: clamp(1rem, 4vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 6vw, 2.5rem);
+  --space-xl: clamp(2rem, 8vw, 4rem);
+
+  /* Fluid container (резиновая верстка) */
+  --container-max: 1170px;
+  --header-container-max: 1440px;
+  --container-padding: clamp(1rem, 5vw, 2rem);
+  --header-mobile-padding: 1rem;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

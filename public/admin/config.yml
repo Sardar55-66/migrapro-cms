@@ -1,0 +1,79 @@
+# Decap CMS (бывший Netlify CMS)
+# Документация: https://decapcms.org/docs/
+
+site_url: http://localhost:5173
+show_preview_links: false
+
+backend:
+  name: github
+  repo: username/landing-cms
+  branch: main
+
+# Локальная разработка: npx decap-server в отдельном терминале
+local_backend: true
+
+media_folder: "public/img/uploads"
+public_folder: "/img/uploads"
+
+locale: ru
+
+collections:
+  - name: pages
+    label: Страницы
+    files:
+      - name: home
+        label: Главная
+        file: "content/home.json"
+        preview_path: "/"
+        fields:
+          # SEO
+          - { label: "Meta Description", name: "meta_description", widget: "string", hint: "Для SEO. Отображается в поисковой выдаче.", required: false }
+
+          # Hero
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Заголовок (синий)", name: "title_accent", widget: "string", default: "Миграционные услуги" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "string", default: "в Москве и Московской области" }
+              - { label: "Описание 1", name: "desc", widget: "text", default: "Помогаем иностранным гражданам в оформлении квоты на РВП, РВПО, РВП, ВНЖ, гражданства РФ," }
+              - { label: "Описание 2", name: "subdesc", widget: "text", default: "а также организациям, привлекающим иностранных сотрудников в России при оформлении виз для сотрудников по квоте и без квот" }
+              - { label: "Текст кнопки", name: "cta_text", widget: "string", default: "Задать вопрос" }
+              - { label: "Изображение (десктоп)", name: "img_desktop", widget: "image", required: false }
+              - { label: "Изображение (мобилка)", name: "img_mobile", widget: "image", required: false }
+
+          # Features
+          - label: "Преимущества"
+            name: "features"
+            widget: "list"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Текст", name: "text", widget: "string" }
+              - { label: "Иконка", name: "icon", widget: "image", required: false }
+
+          # Services cards
+          - label: "Услуги (карточки)"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Описание", name: "desc", widget: "text" }
+              - { label: "Текст кнопки", name: "btn_text", widget: "string", default: "Узнать подробнее" }
+
+          # Порядок блоков
+          - label: "Порядок блоков"
+            name: "blocks"
+            widget: "list"
+            max: 5
+            min: 1
+            hint: "Перетащите элементы для изменения порядка блоков на странице."
+            fields:
+              - label: "Блок"
+                name: "id"
+                widget: "select"
+                options:
+                  - { label: "Hero", value: "hero" }
+                  - { label: "Преимущества", value: "features" }
+                  - { label: "Услуги", value: "services" }
