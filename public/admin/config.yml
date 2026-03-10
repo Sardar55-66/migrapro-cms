@@ -1,7 +1,7 @@
 # Decap CMS (бывший Netlify CMS)
 # Документация: https://decapcms.org/docs/
 
-site_url: http://localhost:5173
+site_url: https://migrapro-cms.netlify.app
 show_preview_links: false
 
 backend:
