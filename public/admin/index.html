@@ -16,7 +16,13 @@
       if (createClass && h) {
         var IframePreview = createClass({
           render: function() {
-            return h('iframe', { src: siteUrl, style: { width: '100%', height: '100%', border: 'none' } });
+            return h('div', { style: { width: '100%', height: '100%', overflow: 'auto', minHeight: '1200px' } },
+              h('iframe', {
+                src: siteUrl,
+                style: { width: '100%', minHeight: '3000px', height: '3000px', border: 'none', display: 'block' },
+                title: 'Превью сайта'
+              })
+            );
           }
         });
         window.CMS.registerPreviewTemplate('home', IframePreview);
