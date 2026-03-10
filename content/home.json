@@ -1,5 +1,5 @@
 {
-  "meta_description": "МИГРАПРО — миграционные услуги в Москве и Московской области. Помогаем с РВП, ВНЖ, гражданством РФ. Комплексная юридическая поддержка.",
+  "meta_description": "МИГРАПРО — услуги в Москве и Московской области. Помогаем с РВП, ВНЖ, гражданством РФ. Комплексная юридическая поддержка.",
   "hero": {
     "title_accent": "Миграционные услуги",
     "subtitle": "в Москве и Московской области",
@@ -10,9 +10,18 @@
     "img_mobile": "/img/img/people-pic-mobile.svg"
   },
   "features": [
-    { "text": "Опытные специалисты", "icon": "/img/icons/college.png" },
-    { "text": "Комплексная юридическая поддержка", "icon": "/img/icons/scale.png" },
-    { "text": "Гарантия правильности оформления", "icon": "/img/icons/tower.png" }
+    {
+      "text": "Опытные специалисты",
+      "icon": "/img/icons/college.png"
+    },
+    {
+      "text": "Комплексная юридическая поддержка",
+      "icon": "/img/icons/scale.png"
+    },
+    {
+      "text": "Гарантия правильности оформления",
+      "icon": "/img/icons/tower.png"
+    }
   ],
   "services": [
     {
@@ -27,8 +36,14 @@
     }
   ],
   "blocks": [
-    { "id": "hero" },
-    { "id": "features" },
-    { "id": "services" }
+    {
+      "id": "hero"
+    },
+    {
+      "id": "features"
+    },
+    {
+      "id": "services"
+    }
   ]
 }
