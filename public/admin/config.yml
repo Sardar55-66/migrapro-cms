@@ -6,11 +6,8 @@ show_preview_links: false
 
 backend:
   name: github
-  repo: username/landing-cms
+  repo: Sardar55-66/migrapro-cms
   branch: main
-
-# Локальная разработка: npx decap-server в отдельном терминале
-local_backend: true
 
 media_folder: "public/img/uploads"
 public_folder: "/img/uploads"
