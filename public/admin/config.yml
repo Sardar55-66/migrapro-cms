@@ -59,11 +59,38 @@ collections:
               - { label: "Описание", name: "desc", widget: "text" }
               - { label: "Текст кнопки", name: "btn_text", widget: "string", default: "Узнать подробнее" }
 
+          # Госуслуги (государственные онлайн‑сервисы)
+          - label: "Госуслуги"
+            name: "state_services"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Заголовок", name: "title", widget: "string", default: "Государственные онлайн‑сервисы для иностранных граждан" }
+              - { label: "Подзаголовок", name: "subtitle", widget: "string", default: "Здесь вы можете получить необходимую информацию для оформления РВП, ВНЖ и Российского гражданства" }
+              - label: "Сервисы"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "Текст", name: "text", widget: "string" }
+                  - { label: "Ссылка", name: "url", widget: "string", required: false }
+
+          # Футер
+          - label: "Футер"
+            name: "footer"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Адрес", name: "address", widget: "text", required: false }
+              - { label: "Режим работы", name: "hours", widget: "string", required: false }
+              - { label: "Телефон", name: "phone", widget: "string", required: false }
+              - { label: "Юридический текст (мобильная версия)", name: "legal_text", widget: "text", required: false, hint: "Текст внизу футера на мобильных" }
+
           # Порядок блоков
           - label: "Порядок блоков"
             name: "blocks"
             widget: "list"
-            max: 5
+            max: 6
             min: 1
             hint: "Перетащите элементы для изменения порядка блоков на странице."
             fields:
@@ -74,3 +101,4 @@ collections:
                   - { label: "Hero", value: "hero" }
                   - { label: "Преимущества", value: "features" }
                   - { label: "Услуги", value: "services" }
+                  - { label: "Госуслуги", value: "state-services" }

@@ -2,7 +2,7 @@
 
 .features {
   padding: clamp(2rem, 6vw, 4rem) var(--container-padding);
-  background: #fff;
+  background: var(--color-bg);
 }
 
 .features__inner {
@@ -24,7 +24,7 @@
   width: clamp(56px, 12vw, 70px);
   height: clamp(56px, 12vw, 70px);
   border-radius: 50%;
-  background: linear-gradient(180deg, #2154B2 0%, #1A4FB0 100%);
+  background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 500;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--color-text-opacity-87);
 }
 
 /* Desktop: 3 blocks in a row, icon left + text right */

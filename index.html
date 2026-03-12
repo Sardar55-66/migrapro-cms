@@ -12,6 +12,7 @@
   </head>
   <body>
     <header class="header" role="banner">
+      <div class="header__inner">
       <!-- Mobile header (unified, never changes) -->
       <div class="header__mobile-header">
         <a class="header__mobile-logo" href="/"><img src="/img/logo/mig-logo.png" alt="МИГРАПРО" width="120" height="38" /></a>
@@ -112,6 +113,7 @@
           </div>
         </div>
       </div>
+      </div>
     </header>
     <main id="app">
       <section id="block-hero" class="hero" aria-labelledby="hero-title">
@@ -209,7 +211,177 @@
           </article>
         </div>
       </section>
+
+      <section id="block-state-services" class="state-services" aria-labelledby="state-services-heading">
+        <div class="state-services__inner">
+          <h2 class="state-services__title" id="state-services-heading">Государственные онлайн‑сервисы для иностранных граждан</h2>
+          <p class="state-services__subtitle">Здесь вы можете получить необходимую информацию для оформления РВП, ВНЖ и Российского гражданства</p>
+          <ul class="state-services__grid" role="list">
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Проверить готовность документов РВП</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Проверить готовность документов ВНЖ</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Проверка наличия розыскных дел (ФССП)</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Проверить действительность разрешения на работу и патента</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Узнать идентификационный номер налогоплательщика (ИНН)</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Проверить наличие основания для запрета въезда в РФ</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Запись в миграционный центр Сахарово</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+            <li>
+              <a class="state-services__card" href="#" target="_blank" rel="noopener noreferrer">
+                <span class="state-services__card-text">Наличие исполнительных производств</span>
+                <span class="state-services__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <!-- Top: logo only -->
+        <div class="footer__top">
+          <a class="footer__logo" href="/" aria-label="На главную">
+            <img src="/img/logo/newhome-logo.png" alt="Миграционный центр" width="160" height="50" />
+          </a>
+        </div>
+
+        <!-- Primary nav: after divider (desktop) -->
+        <nav class="footer__nav-primary" aria-label="Основные разделы">
+          <a href="#">Услуги иностранным гражданам</a>
+          <a href="#">Отмена депортации</a>
+          <a href="#">Полезные статьи</a>
+          <a href="#">Вопросы и ответы</a>
+          <a href="#">Карта сайта</a>
+          <a href="#">Контакты</a>
+        </nav>
+
+        <!-- Middle: 4 columns of service links -->
+        <div class="footer__services">
+          <div class="footer__col">
+            <h3 class="footer__col-title footer__col-title--mobile">Услуги иностранным гражданам</h3>
+            <h3 class="footer__col-title footer__col-title--desktop">Получить РВП РФ</h3>
+            <ul class="footer__links">
+              <li><a href="#">Получить квоту на РВП</a></li>
+              <li><a href="#">Получить РВП по браку</a></li>
+              <li><a href="#">Получить РВП по образованию</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Получить ВНЖ РФ</h3>
+            <ul class="footer__links">
+              <li><a href="#">Получить ВНЖ по браку</a></li>
+              <li><a href="#">Получить ВНЖ по ребенку</a></li>
+              <li><a href="#">Получить ВНЖ по родителям</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Гражданство РФ</h3>
+            <ul class="footer__links">
+              <li><a href="#">Гражданство РФ в общем порядке</a></li>
+              <li><a href="#">Гражданство РФ в упрощенном порядке</a></li>
+              <li><a href="#">Гражданство РФ по родителям</a></li>
+              <li><a href="#">Гражданство РФ по детям</a></li>
+              <li><a href="#">Гражданство РФ по браку</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__col-title">Оформление рабочей визы</h3>
+            <ul class="footer__links">
+              <li><a href="#">Разрешение на привлечение и использование иностранных работников</a></li>
+              <li><a href="#">Оформление приглашения для иностранцев</a></li>
+              <li><a href="#">Разрешение на работу для студентов</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom: contacts, social, CTA, partners, copyright -->
+        <div class="footer__bottom">
+          <div class="footer__contacts">
+            <p class="footer__address">Московская Область, Одинцовский р-н, <br/> п. Новоивановское, ул. Калинина 8</p>
+            <p class="footer__hours">Ежедневно с 09:00 до 18:00</p>
+            <a class="footer__phone" href="tel:+74951272387">+7 (495) 127-23-87</a>
+            <div class="footer__comm-icons">
+              <a href="mailto:info@migrapro.ru" aria-label="Написать на email"><img src="/img/icons/whatsapp.png" alt="" width="32" height="32" /></a>
+              <a href="#" aria-label="Telegram"><img src="/img/icons/telegram.png" alt="" width="32" height="32" /></a>
+            </div>
+          </div>
+          <div class="footer__social-wrap">
+            <div class="footer__social-block">
+              <p class="footer__social-label">Мы в соц.сетях:</p>
+              <div class="footer__social">
+                <a href="#" aria-label="ВКонтакте"><img src="/img/icons/vk-icon.png" alt="" width="32" height="32" /></a>
+                <a href="#" aria-label="Соцсеть"><img src="/img/icons/circle-icon.png" alt="" width="32" height="32" /></a>
+                <a href="#" aria-label="YouTube"><img src="/img/icons/youtube.icon.png" alt="" width="32" height="32" /></a>
+                <a href="#" aria-label="Rutube"><img src="/img/icons/rutube-icon.png" alt="" width="32" height="32" /></a>
+                <a href="#" aria-label="Одноклассники"><img src="/img/icons/odnoklassniki-icon.png" alt="" width="32" height="32" /></a>
+                <a href="#" aria-label="Telegram"><img src="/img/icons/telegram-small-icon.png" alt="" width="32" height="32" /></a>
+              </div>
+            </div>
+            <a class="footer__cta" href="#consultation">Помощь специалиста</a>
+          </div>
+        </div>
+
+        <div class="footer__partners">
+          <a class="footer__partner" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/img/icons/government-icon.png" alt="" width="24" height="24" />
+            <span>Правительство МО</span>
+          </a>
+          <a class="footer__partner" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/img/icons/government-icon.png" alt="" width="24" height="24" />
+            <span>Госуслуги МО</span>
+          </a>
+          <a class="footer__partner" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/img/icons/gosuslgi-icon.png" alt="" width="24" height="24" />
+            <span>Портал Госуслуг</span>
+          </a>
+        </div>
+
+        <div class="footer__legal">
+          <p class="footer__copyright footer__copyright--desktop">ООО «Трудовой консультант» ИНН 772601001</p>
+          <p class="footer__legal-text footer__legal-text--mobile">Миграционный центр в Московской области ООО «Трудовой консультант» ИНН 772601001. Юр. адрес: 117208, г. Москва, вн.тер.г. муниципальный округ Чертаново Северное, ул. Чертановская, д.7а, подв. 0 помещ. 26, офис 168. ОГРН 5147746</p>
+          <p class="footer__dev footer__dev--desktop">
+            <a href="#">СЕО продвижение сайтов и комплексный маркетинг.</a>
+            <a href="#">Заказать рекламу в интернете.</a>
+            <a href="#">Заказать создание сайта</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>

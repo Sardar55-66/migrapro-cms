@@ -1,0 +1,120 @@
+/* State services — mobile-first, fluid layout */
+
+.state-services {
+  padding: var(--space-xl) var(--container-padding);
+}
+
+.state-services__inner {
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+.state-services__title {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.state-services__subtitle {
+  margin: 0 0 var(--space-lg);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+.state-services__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.state-services__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: clamp(0.875rem, 3vw, 1.125rem) clamp(1rem, 4vw, 1.25rem);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+  min-height: 116px;
+  border: 1px solid var(--color-border-light);
+}
+
+.state-services__card:hover {
+  background: var(--color-bg-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.state-services__card-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.state-services__card-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-tertiary);
+  margin-bottom: 25px;
+}
+
+.state-services__card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Desktop: 3-2-2-1 layout */
+@media (min-width: 768px) {
+  .state-services__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+}
+
+@media (min-width: 992px) {
+  .state-services__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .state-services__subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-xl);
+  }
+
+  .state-services__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    flex-direction: row;
+  }
+
+  /* Fixed widths: row1 370×3, row2 470+490, row3 567+370, row4 370 */
+  .state-services__grid li {
+    flex-shrink: 0;
+  }
+  .state-services__grid li:nth-child(1) { width: 370px; }
+  .state-services__grid li:nth-child(2) { width: 370px; }
+  .state-services__grid li:nth-child(3) { width: 370px; }
+  .state-services__grid li:nth-child(4) { width: 470px; }
+  .state-services__grid li:nth-child(5) { width: 490px; }
+  .state-services__grid li:nth-child(6) { width: 567px; }
+  .state-services__grid li:nth-child(7) { width: 370px; }
+  .state-services__grid li:nth-child(8) { width: 370px; }
+
+  .state-services__card {
+    font-size: var(--font-size-base);
+    padding: var(--space-md) var(--space-lg);
+  }
+}
